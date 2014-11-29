@@ -1,0 +1,1869 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <!-- Meta-->
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+
+   <meta name="description" content="AutoDocs - Aldeberan Shipping Services">
+   <meta name="keywords" content="AutoDocs - Nonima Naviera y Generacion de Documentos">
+   <meta name="author" content="Eduardo Freitas - FastDoks, inc.">
+   
+   <title>AutoDocs</title>
+
+   <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script><script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+
+   <!-- Bootstrap CSS-->
+   <link rel="stylesheet" href="app/css/loader.css">
+   <link rel="stylesheet" href="app/css/bootstrap.css">
+   <link rel="stylesheet" href="app/css/typeahead.css">
+
+   <!-- Vendor CSS-->
+   <link rel="stylesheet" href="vendor/sweet-alert/sweet-alert.css">
+   <link rel="stylesheet" href="app/css/app.css">
+
+   <link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.min.css">
+   <link rel="stylesheet" href="vendor/animo/animate+animo.css">
+
+   <!-- Modernizr JS Script-->
+   <script src="vendor/modernizr/modernizr.js" type="application/javascript"></script>
+   <!-- FastClick for mobiles-->
+   <script src="vendor/fastclick/fastclick.js" type="application/javascript"></script>
+
+   <link rel="stylesheet" href="app/css/tables.stack.css">
+   <link rel="stylesheet" href="app/css/demohead.css">
+</head>
+
+<body>
+   <!-- START Main wrapper-->
+   <section class="wrapper">
+      <!-- START Top Navbar-->
+      <nav role="navigation" class="navbar navbar-default navbar-top navbar-fixed-top">
+         <!-- START navbar header-->
+         <div class="navbar-header">
+            <a href="#" class="navbar-brand">
+               <div id="fd_appName" class="brand-logo">AutoDocs</div>
+               <div class="brand-logo-collapsed"><span class="fa fa-male"></span></div>
+            </a>
+         </div>
+         <!-- END navbar header-->
+         <!-- START Nav wrapper-->
+         <div class="nav-wrapper">
+            <!-- START Left navbar-->
+            <ul class="nav navbar-nav">
+               <li>
+                  <a href="#" data-toggle="aside">
+                     <em class="fa fa-align-left"></em>
+                  </a>
+               </li>
+            </ul>
+            <!-- END Left navbar-->
+            
+         </div>
+         <!-- END Nav wrapper-->
+      </nav>
+      <!-- END Top Navbar-->
+      <!-- START aside-->
+      <aside class="aside">
+         <!-- START Sidebar (left)-->
+         <nav class="sidebar">
+            <ul class="nav">
+            
+               <li>
+                  <a href="#" title="Tables" data-toggle="collapse-next" class="has-submenu">
+                     <em class="fa fa-table"></em>
+                     <span class="item-text">Datos</span>
+                  </a>
+                  
+                  <!-- START SubMenu item-->
+                  <ul class="nav collapse ">
+                     <li>
+                        <a href="#/tripulantes" title="Standard" data-toggle="" class="no-submenu">
+                           <span class="item-text">Tripulantes</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#/datos-fisicos" title="Standard" data-toggle="" class="no-submenu">
+                           <span class="item-text">Datos-Fisicos</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#/datos-personales" title="Standard" data-toggle="" class="no-submenu">
+                           <span class="item-text">Datos-Personales</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#/embarques" title="Extended" data-toggle="" class="no-submenu">
+                           <span class="item-text">Embarques</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#/idiomas" title="Extended" data-toggle="" class="no-submenu">
+                           <span class="item-text">Idiomas</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#/certificados" title="Extended" data-toggle="" class="no-submenu">
+                           <span class="item-text">Certificados</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#/nacionalidades" title="Extended" data-toggle="" class="no-submenu">
+                           <span class="item-text">Nacionalidades</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#/visas" title="Extended" data-toggle="" class="no-submenu">
+                           <span class="item-text">Visas</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#/familiares" title="Extended" data-toggle="" class="no-submenu">
+                           <span class="item-text">Familiares</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#/cargos" title="Extended" data-toggle="" class="no-submenu">
+                           <span class="item-text">Cargos</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#/examenes" title="Extended" data-toggle="" class="no-submenu">
+                           <span class="item-text">Examenes</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#/clinicas" title="Extended" data-toggle="" class="no-submenu">
+                           <span class="item-text">Clinicas</span>
+                        </a>
+                     </li>
+                  </ul>
+                  <!-- END SubMenu item-->
+               </li>
+               <!-- END Menu-->
+               
+               <!-- START Menu-->
+               <li>
+                  <a href="#" title="Charts" data-toggle="collapse-next" class="has-submenu">
+                     <em class="fa fa-bar-chart-o"></em>
+                     <span class="item-text">Reportes</span>
+                  </a>
+                  <!-- START SubMenu item-->
+                  <ul class="nav collapse ">
+                     <li>
+                        <a href="chart-flot.html" title="Flot" data-toggle="" class="no-submenu">
+                           <span class="item-text"></span>
+                        </a>
+                     </li>
+                  </ul>
+                  <!-- END SubMenu item-->
+               </li>
+               
+               <!-- Sidebar footer    -->
+               <li class="nav-footer">
+                  <div class="nav-footer-divider"></div>
+                  <!-- START button group-->
+                  <div class="btn-group text-center">
+                     <button id="fd_btnLogout" type="button" data-toggle="tooltip" data-title="Salir" class="btn btn-link">
+                        <em class="fa fa-sign-out text-muted"></em>
+                     </button>
+                  </div>
+                  <!-- END button group-->
+               </li>
+            </ul>
+         </nav>
+         <!-- END Sidebar (left)-->
+      </aside>
+      <!-- End aside-->
+      
+      <!-- START Main section-->
+      <section>
+         <!-- START Page content-->
+         <section class="main-content">
+            <h3 id="captionMain">
+               Base de Datos<br>
+               <small id="captionSmall">Seleccione una opcion del menu izquierdo</small>
+            </h3>
+            <!-- NOTIFICATION STATUS - TOP RIGHT MESSAGE -->
+            <!--<div data-toggle="notify" data-onload data-message="&lt;b&gt;Bienvenido a Autodocs!&lt;/b&gt; Que tengas un buen dia." data-options="{&quot;status&quot;:&quot;success&quot;, &quot;pos&quot;:&quot;top-right&quot;}" class="hidden-xs"></div>-->
+
+            <div id="fd_Main404Div" class="row" style="display: none">
+            <div class="col-sm-12">
+               <div class="panel panel-danger">
+                  <div class="panel-heading">Error</div>
+                     <div class="panel-body">
+                        <p>Web URL no existente. Favor use las opciones existentes del Menu.</p>
+                     </div>
+                     <div class="panel-footer">Muchas gracias</div>
+                  </div>
+               </div>
+            </div>
+            </div>
+
+            <div id="loadStart" class="se-pre-con"></div>
+            
+            <div id="fd_MainTripulanteDiv" class="row" style="display: none">
+				<div class="col-sm-12">
+					<div class="panel panel-primary">
+						<div class="panel-body">
+							<button id="fd_NuevoTripulante" type="button" class="btn btn-primary btn-sm">Nuevo Tripulante</button>
+							<button id="fd_ModificarTripulante" type="button" class="btn btn-success btn-sm">Ver Tripulantes</button>
+						</div>
+					</div>
+				</div>
+            </div>
+
+            <div id="fd_TripulantesExtrasBtns" class="row" style="display: none">
+            <div class="col-sm-12">
+               <div class="panel panel-primary">
+                  <div class="panel-body">
+                     <button id="fd_VolverTripulante" type="button" class="btn btn-primary btn-sm">Cancelar</button>
+                     <button id="fd_EliminarTripulantes" type="button" class="btn btn-danger btn-sm">Eliminar Todos</button>
+                  </div>
+               </div>
+            </div>
+            </div>
+
+            <div id="fd_TripulantesTable" class="row" style="display: none">
+            <div class="col-sm-12">
+               <div>
+                  <input style="display: none" id="stackable_fd_TripulantesTableBuscar" type="text" placeholder="Buscar..." class="form-control input-sm"><br />
+                  <table id="stackable_fd_TripulantesTable" class="tablesaw tablesaw-stack" data-mode="stack">
+                  </table>
+                  <h5 class="text-muted" id="stackable_fd_TripulantesTableCount"></h5>
+               </div>
+            </div>
+            </div>
+
+            <div id="fd_TripulantesFieldsDiv" class="row" style="display: none">
+            <br />
+            <div class="col-sm-12">
+               <div id="fd_TripulantesFieldsDivMain">
+                  <fieldset>
+                     <legend id="fd_TripulantesFieldsDivCaption">Nuevo Tripulante</legend>
+                     <br />
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Cedula</label>
+                        <div class="col-sm-10">
+                           <input id="fd_TripulantesCedula" type="text" class="form-control">
+                           <span class="help-block m-b-none">Cedula de Identidad del Tripulante: V14653267 o J65412378 o E64578911</span>
+                           <p id="fd_TripulantesCedulaNoValida" class="text-danger">Cedula de Identidad no valida.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Cedula Marina</label>
+                        <div class="col-sm-10">
+                           <input id="fd_TripulantesCedulaMarina" type="text" class="form-control">
+                           <span class="help-block m-b-none">Cedula Marina del Tripulante (Letras y numeros)</span>
+                           <p id="fd_TripulantesCedulaMarinaNoValida" class="text-danger">Cedula Marina no valida.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Nombres y Apellidos</label>
+                        <div class="col-sm-10">
+                           <input id="fd_TripulantesNombreCompleto" type="text" class="form-control">
+                           <span class="help-block m-b-none">Nombres y apellidos del tripulante (Solo letras)</span>
+                           <p id="fd_TripulantesNombreCompletoNoValida" class="text-danger">Nombres y apellidos no validos.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Sexo</label>
+                        <div class="col-sm-10">
+                           <input id="fd_TripulantesSexo" type="text" class="form-control typeahead">
+                           <span class="help-block m-b-none">Sexo del Tripulante (Solo letras)</span>
+                           <p id="fd_TripulantesSexoNoValida" class="text-danger">Sexo no valido.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Fecha de Nacimiento</label>
+                        <div class="col-sm-10">
+                           <input id="fd_TripulantesFechaNacimiento" type="text" class="form-control">
+                           <span class="help-block m-b-none">Fecha de Nacimiento del Tripulante (dd/mm/yyyy) - debe ser mayor de edad (>= 18 y menos/igual a 75)</span>
+                           <p id="fd_TripulantesFechaNacimientoNoValida" class="text-danger">Fecha de Nacimiento no valida.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Lugar de Nacimiento</label>
+                        <div class="col-sm-10">
+                           <input id="fd_TripulantesLugarNacimiento" type="text" class="form-control">
+                           <span class="help-block m-b-none">Lugar de Nacimiento del Tripulante (Solo letras, espacios, ',' '.' '-')</span>
+                           <p id="fd_TripulantesLugarNacimientoNoValida" class="text-danger">LugarNacimiento no valido.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Provincia de Nacimiento</label>
+                        <div class="col-sm-10">
+                           <input id="fd_TripulantesProvinciaNacimiento" type="text" class="form-control">
+                           <span class="help-block m-b-none">Provincia de Nacimiento del Tripulante (Solo letras, espacios, ',' '.' '-')</span>
+                           <p id="fd_TripulantesProvinciaNacimientoNoValida" class="text-danger">Provincia de Nacimiento no valida.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Pais de Nacimiento</label>
+                        <div class="col-sm-10">
+                           <input placeholder="Pais" class="form-control typeahead" id="fd_TripulantesPaisNacimiento" type="text">
+                           <span class="help-block m-b-none">(Solo letras y espacios)</span>
+                           <p id="fd_TripulantesPaisNacimientoNoValida" class="text-danger">Pais de Nacimiento no valido.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Profesion</label>
+                        <div class="col-sm-10">
+                           <input id="fd_TripulantesProfesion" type="text" class="form-control">
+                           <span class="help-block m-b-none">Profesion del Tripulante (Solo letras, espacios, ',' '.' '-')</span>
+                           <p id="fd_TripulantesProfesionNoValida" class="text-danger">Profesion no valida.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Estado Civil</label>
+                        <div class="col-sm-10">
+                           <input id="fd_TripulantesEstadoCivil" type="text" class="form-control typeahead">
+                           <span class="help-block m-b-none">Estado Civil del Tripulante</span>
+                           <p id="fd_TripulantesEstadoCivilNoValida" class="text-danger">Estado Civil no valido.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <br />
+                  <button id="fd_GuardarTripulante" type="button" class="disabled btn btn-success btn-sm">Guardar Tripulante</button>
+                  <button id="fd_CancelarTripulante" type="button" class="btn btn-danger btn-sm">Cancelar Tripulante</button>
+               </div>
+            </div>
+            </div>
+            
+            <div id="fd_MainDatosFisicosDiv" class="row" style="display: none">
+				<div class="col-sm-12">
+					<div class="panel panel-primary">
+						<div class="panel-body">
+							<button id="fd_NuevoDatosFisicos" type="button" class="btn btn-primary btn-sm">Nuevo Dato-Fisico</button>
+							<button id="fd_ModificarDatosFisicos" type="button" class="btn btn-success btn-sm">Datos-Fisicos</button>
+						</div>
+					</div>
+				</div>
+            </div>
+
+            <div id="fd_DatosFisicosExtrasBtns" class="row" style="display: none">
+            <div class="col-sm-12">
+               <div class="panel panel-primary">
+                  <div class="panel-body">
+                     <button id="fd_VolverDatosFisico" type="button" class="btn btn-primary btn-sm">Cancelar</button>
+                     <button id="fd_EliminarDatosFisicos" type="button" class="btn btn-danger btn-sm">Eliminar Todos</button>
+                  </div>
+               </div>
+            </div>
+            </div>
+
+            <div id="fd_DatosFisicosTable" class="row" style="display: none">
+            <div class="col-sm-12">
+               <div>
+                  <input style="display: none" id="stackable_fd_DatosFisicosTableBuscar" type="text" placeholder="Buscar..." class="form-control input-sm"><br />
+                  <table id="stackable_fd_DatosFisicosTable" class="tablesaw tablesaw-stack" data-mode="stack">
+                  </table>
+                  <h5 class="text-muted" id="stackable_fd_DatosFisicosTableCount"></h5>
+               </div>
+            </div>
+            </div>
+
+            <div id="fd_DatosFisicosFieldsDiv" class="row" style="display: none">
+            <br />
+            <div class="col-sm-12">
+               <div id="fd_DatosFisicosFieldsDivMain">
+                  <fieldset>
+                     <legend id="fd_DatosFisicosFieldsDivCaption">Nuevo Dato-Fisico</legend>
+                     <br />
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Cedula</label>
+                        <div class="col-sm-10">
+                           <input id="fd_DatosFisicosCedula" type="text" class="form-control typeahead">
+                           <span class="help-block m-b-none">Cedula de Identidad del Tripulante: V14653267 o J65412378 o E64578911</span>
+                           <p id="fd_DatosFisicosCedulaNoValida" class="text-danger">Cedula de Identidad no valida.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Peso</label>
+                        <div class="col-sm-10">
+                           <input id="fd_DatosFisicosPeso" type="text" class="form-control">
+                           <span class="help-block m-b-none">Peso del Tripulante (Kilos - numero entero)</span>
+                           <p id="fd_DatosFisicosPesoNoValida" class="text-danger">Peso del Tripulante no valido.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Estatura</label>
+                        <div class="col-sm-10">
+                           <input id="fd_DatosFisicosEstatura" type="text" class="form-control">
+                           <span class="help-block m-b-none">Estatura del Tripulante (Cms - numero entero)</span>
+                           <p id="fd_DatosFisicosEstaturaNoValida" class="text-danger">Estatura del Tripulante no valida.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Talla</label>
+                        <div class="col-sm-10">
+                           <input id="fd_DatosFisicosTalla" type="text" class="form-control">
+                           <span class="help-block m-b-none">Talla de Braga (Numero entero)</span>
+                           <p id="fd_DatosFisicosTallaNoValida" class="text-danger">Talla de Braga no valida.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Zapatos</label>
+                        <div class="col-sm-10">
+                           <input id="fd_DatosFisicosZapatos" type="text" class="form-control">
+                           <span class="help-block m-b-none">Talla de Zapatos (Numero entero)</span>
+                           <p id="fd_DatosFisicosZapatosNoValida" class="text-danger">Talla de Zapatos no valida.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <br />
+                  <button id="fd_GuardarDatosFisicos" type="button" class="disabled btn btn-success btn-sm">Guardar Dato-Fisico</button>
+                  <button id="fd_CancelarDatosFisicos" type="button" class="btn btn-danger btn-sm">Cancelar Dato-Fisico</button>
+               </div>
+            </div>
+            </div>
+            
+            <div id="fd_MainDatosPersonalesDiv" class="row">
+				<div class="col-sm-12">
+					<div class="panel panel-primary">
+						<div class="panel-body">
+							<button id="fd_NuevoDatosPersonales" type="button" class="btn btn-primary btn-sm">Nuevo Dato-Personal</button>
+							<button id="fd_ModificarDatosPersonales" type="button" class="btn btn-success btn-sm">Datos-Personales</button>
+						</div>
+					</div>
+				</div>
+            </div>
+
+            <div id="fd_DatosPersonalesExtrasBtns" class="row" style="display: none">
+            <div class="col-sm-12">
+               <div class="panel panel-primary">
+                  <div class="panel-body">
+                     <button id="fd_VolverDatosPersonal" type="button" class="btn btn-primary btn-sm">Cancelar</button>
+                     <button id="fd_EliminarDatosPersonales" type="button" class="btn btn-danger btn-sm">Eliminar Todos</button>
+                  </div>
+               </div>
+            </div>
+            </div>
+
+            <div id="fd_DatosPersonalesTable" class="row" style="display: none">
+            <div class="col-sm-12">
+               <div>
+                  <input style="display: none" id="stackable_fd_DatosPersonalesTableBuscar" type="text" placeholder="Buscar..." class="form-control input-sm"><br />
+                  <table id="stackable_fd_DatosPersonalesTable" class="tablesaw tablesaw-stack" data-mode="stack">
+                  </table>
+                  <h5 class="text-muted" id="stackable_fd_DatosPersonalesTableCount"></h5>
+               </div>
+            </div>
+            </div>
+
+            <div id="fd_DatosPersonalesFieldsDiv" class="row" style="display: none">
+            <br />
+            <div class="col-sm-12">
+               <div id="fd_DatosPersonalesFieldsDivMain">
+                  <fieldset>
+                     <legend id="fd_DatosPersonalesFieldsDivCaption">Nuevo Dato-Personal</legend>
+                     <br />
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Cedula</label>
+                        <div class="col-sm-10">
+                           <input id="fd_DatosPersonalesCedula" type="text" class="form-control typeahead">
+                           <span class="help-block m-b-none">Cedula de Identidad del Tripulante: V14653267 o J65412378 o E64578911</span>
+                           <p id="fd_DatosPersonalesCedulaNoValida" class="text-danger">Cedula de Identidad no valida.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Telefonos</label>
+                        <div class="col-sm-10">
+                           <input id="fd_DatosPersonalesTelefonos" type="text" class="form-control">
+                           <span class="help-block m-b-none">Telefonos del Tripulante (separar con , si son varios. Usar el siguiente formato: +582812826162)</span>
+                           <p id="fd_DatosPersonalesTelefonosNoValida" class="text-danger">Telefonos no validos.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Direccion</label>
+                        <div class="col-sm-10">
+                           <input id="fd_DatosPersonalesDireccion" type="text" class="form-control">
+                           <span class="help-block m-b-none">Direccion del Tripulante</span>
+                           <p id="fd_DatosPersonalesDireccionNoValida" class="text-danger">Direccion no valida.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Emails</label>
+                        <div class="col-sm-10">
+                           <input id="fd_DatosPersonalesEmails" type="text" class="form-control">
+                           <span class="help-block m-b-none">Emails del Tripulante (separar con , si son varios)</span>
+                           <p id="fd_DatosPersonalesEmailsNoValida" class="text-danger">Emails no validos.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Webs</label>
+                        <div class="col-sm-10">
+                           <input id="fd_DatosPersonalesWebs" type="text" class="form-control">
+                           <span class="help-block m-b-none">Webs del Tripulante (separar con , si son varios)</span>
+                           <p id="fd_DatosPersonalesWebsNoValida" class="text-danger">Webs no validos.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <br />
+                  <button id="fd_GuardarDatosPersonales" type="button" class="disabled btn btn-success btn-sm">Guardar Dato-Personal</button>
+                  <button id="fd_CancelarDatosPersonales" type="button" class="btn btn-danger btn-sm">Cancelar Dato-Personal</button>
+               </div>
+            </div>
+            </div>
+            
+            <div id="fd_MainEmbarquesDiv" class="row" style="display: none">
+				<div class="col-sm-12">
+					<div class="panel panel-primary">
+						<div class="panel-body">
+							<button id="fd_NuevoEmbarque" type="button" class="btn btn-primary btn-sm">Nuevo Embarque</button>
+							<button id="fd_ModificarEmbarque" type="button" class="btn btn-success btn-sm">Embarques</button>
+						</div>
+					</div>
+				</div>
+            </div>
+
+            <div id="fd_EmbarquesExtrasBtns" class="row" style="display: none">
+            <div class="col-sm-12">
+               <div class="panel panel-primary">
+                  <div class="panel-body">
+                     <button id="fd_VolverEmbarque" type="button" class="btn btn-primary btn-sm">Cancelar</button>
+                     <button id="fd_EliminarEmbarques" type="button" class="btn btn-danger btn-sm">Eliminar Todos</button>
+                  </div>
+               </div>
+            </div>
+            </div>
+
+            <div id="fd_EmbarquesTable" class="row" style="display: none">
+            <div class="col-sm-12">
+               <div>
+                  <input style="display: none" id="stackable_fd_EmbarquesTableBuscar" type="text" placeholder="Buscar..." class="form-control input-sm"><br />
+                  <table id="stackable_fd_EmbarquesTable" class="tablesaw tablesaw-stack" data-mode="stack">
+                  </table>
+                  <h5 class="text-muted" id="stackable_fd_EmbarquesTableCount"></h5>
+               </div>
+            </div>
+            </div>
+
+            <div id="fd_EmbarquesFieldsDiv" class="row" style="display: none">
+            <br />
+            <div class="col-sm-12">
+               <div id="fd_EmbarquesFieldsDivMain">
+                  <fieldset>
+                     <legend id="fd_EmbarquesFieldsDivCaption">Nuevo Embarque</legend>
+                     <br />
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Cedula</label>
+                        <div class="col-sm-10">
+                           <input id="fd_EmbarquesCedula" type="text" class="form-control typeahead">
+                           <span class="help-block m-b-none">Cedula de Identidad del Tripulante: V14653267 o J65412378 o E64578911</span>
+                           <p id="fd_EmbarquesCedulaNoValida" class="text-danger">Cedula de Identidad no valida.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Capitan</label>
+                        <div class="col-sm-10">
+                           <input id="fd_EmbarquesCapitan" type="text" class="form-control">
+                           <span class="help-block m-b-none">Capitan del Buque/Embarque (Solo letras)</span>
+                           <p id="fd_EmbarquesCapitanNoValida" class="text-danger">Capitan del Buque/Embarque no valido.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Buque</label>
+                        <div class="col-sm-10">
+                           <input id="fd_EmbarquesBuque" type="text" class="form-control">
+                           <span class="help-block m-b-none">Nombre del Buque</span>
+                           <p id="fd_EmbarquesBuqueNoValida" class="text-danger">Nombre del Buque no valido.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Clase Buque</label>
+                        <div class="col-sm-10">
+                           <input id="fd_EmbarquesClaseBuque" type="text" class="form-control">
+                           <span class="help-block m-b-none">Clase / Tipo Buque</span>
+                           <p id="fd_EmbarquesClaseBuqueNoValida" class="text-danger">Clase / Tipo Buque no valido.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Cargo Buque</label>
+                        <div class="col-sm-10">
+                           <input id="fd_EmbarquesCargoBuque" type="text" class="form-control">
+                           <span class="help-block m-b-none">Cargo del Tripulante en el Buque (Solo letras)</span>
+                           <p id="fd_EmbarquesCargoBuqueNoValida" class="text-danger">Cargo Buque no valido.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Fecha Embarque</label>
+                        <div class="col-sm-10">
+                           <input id="fd_EmbarquesFechaEmbarque" type="text" class="form-control">
+                           <span class="help-block m-b-none">Fecha de Embarque del Tripulante (dd/mm/yyyy)</span>
+                           <p id="fd_EmbarquesFechaEmbarqueNoValida" class="text-danger">Fecha de Embarque no valida.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Fecha Desembarque</label>
+                        <div class="col-sm-10">
+                           <input id="fd_EmbarquesFechaDesembarque" type="text" class="form-control">
+                           <span class="help-block m-b-none">Fecha de Desembarque del Tripulante (dd/mm/yyyy)</span>
+                           <p id="fd_EmbarquesFechaDesembarqueNoValida" class="text-danger">Fecha de Desembarque no valida.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Causa Desembarque</label>
+                        <div class="col-sm-10">
+                           <input id="fd_EmbarquesCausaDesembarque" type="text" class="form-control">
+                           <span class="help-block m-b-none">Causa del Desembarque (Solo letras)</span>
+                           <p id="fd_EmbarquesCausaDesembarqueNoValida" class="text-danger">Causa del Desembarque no valida.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Puerto Buque</label>
+                        <div class="col-sm-10">
+                           <input id="fd_EmbarquesPuertoBuque" type="text" class="form-control">
+                           <span class="help-block m-b-none">Puerto del Buque (Solo letras)</span>
+                           <p id="fd_EmbarquesPuertoBuqueNoValida" class="text-danger">Puerto del Buque no valido.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Bandera Buque</label>
+                        <div class="col-sm-10">
+                           <input id="fd_EmbarquesBanderaBuque" type="text" class="form-control">
+                           <span class="help-block m-b-none">Bandera del Buque (Solo letras)</span>
+                           <p id="fd_EmbarquesBanderaBuqueNoValida" class="text-danger">Bandera del Buque no valida.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <br />
+                  <button id="fd_GuardarEmbarques" type="button" class="disabled btn btn-success btn-sm">Guardar Embarque</button>
+                  <button id="fd_CancelarEmbarques" type="button" class="btn btn-danger btn-sm">Cancelar Embarque</button>
+               </div>
+            </div>
+            </div>
+            
+            <div id="fd_MainIdiomasDiv" class="row" style="display: none">
+				<div class="col-sm-12">
+					<div class="panel panel-primary">
+						<div class="panel-body">
+							<button id="fd_NuevoIdioma" type="button" class="btn btn-primary btn-sm">Nuevo Idioma</button>
+							<button id="fd_ModificarIdioma" type="button" class="btn btn-success btn-sm">Idiomas</button>
+						</div>
+					</div>
+				</div>
+            </div>
+
+            <div id="fd_IdiomasExtrasBtns" class="row" style="display: none">
+            <div class="col-sm-12">
+               <div class="panel panel-primary">
+                  <div class="panel-body">
+                     <button id="fd_VolverIdioma" type="button" class="btn btn-primary btn-sm">Cancelar</button>
+                     <button id="fd_EliminarIdiomas" type="button" class="btn btn-danger btn-sm">Eliminar Todos</button>
+                  </div>
+               </div>
+            </div>
+            </div>
+
+            <div id="fd_IdiomasTable" class="row" style="display: none">
+            <div class="col-sm-12">
+               <div>
+                  <input style="display: none" id="stackable_fd_IdiomasTableBuscar" type="text" placeholder="Buscar..." class="form-control input-sm"><br />
+                  <table id="stackable_fd_IdiomasTable" class="tablesaw tablesaw-stack" data-mode="stack">
+                  </table>
+                  <h5 class="text-muted" id="stackable_fd_IdiomasTableCount"></h5>
+               </div>
+            </div>
+            </div>
+
+            <div id="fd_IdiomasFieldsDiv" class="row" style="display: none">
+            <br />
+            <div class="col-sm-12">
+               <div id="fd_IdiomasFieldsDivMain">
+                  <fieldset>
+                     <legend id="fd_IdiomasFieldsDivCaption">Nuevo Idioma</legend>
+                     <br />
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Cedula</label>
+                        <div class="col-sm-10">
+                           <input id="fd_IdiomasCedula" type="text" class="form-control typeahead">
+                           <span class="help-block m-b-none">Cedula de Identidad del Tripulante: V14653267 o J65412378 o E64578911</span>
+                           <p id="fd_IdiomasCedulaNoValida" class="text-danger">Cedula de Identidad no valida.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Nombre</label>
+                        <div class="col-sm-10">
+                           <input id="fd_IdiomasNombre" type="text" class="form-control">
+                           <span class="help-block m-b-none">Nombre del Idioma (Solo letras)</span>
+                           <p id="fd_IdiomasNombreNoValida" class="text-danger">Nombre del Idioma no valido.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Nivel Lectura</label>
+                        <div class="col-sm-10">
+                           <input id="fd_IdiomasNivelLectura" type="text" class="form-control">
+                           <span class="help-block m-b-none">Nivel de Lectura (Solo letras)</span>
+                           <p id="fd_IdiomasNivelLecturaNoValida" class="text-danger">Nivel de Lectura no valido.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Nivel Escrito</label>
+                        <div class="col-sm-10">
+                           <input id="fd_IdiomasNivelEscrito" type="text" class="form-control">
+                           <span class="help-block m-b-none">Nivel de Escritura (Solo letras)</span>
+                           <p id="fd_IdiomasNivelEscritoNoValida" class="text-danger">Nivel de Escritura no valido.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Nivel Hablado</label>
+                        <div class="col-sm-10">
+                           <input id="fd_IdiomasNivelHablado" type="text" class="form-control">
+                           <span class="help-block m-b-none">Nivel Hablado (Solo letras)</span>
+                           <p id="fd_IdiomasNivelHabladoNoValida" class="text-danger">Nivel Hablado no valido.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Acento</label>
+                        <div class="col-sm-10">
+                           <input id="fd_IdiomasAcento" type="text" class="form-control">
+                           <span class="help-block m-b-none">Tipo o nombre de Acento (Solo letras)</span>
+                           <p id="fd_IdiomasAcentoNoValida" class="text-danger">Tipo o nombre de Acento no valido.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Aprendido en</label>
+                        <div class="col-sm-10">
+                           <input id="fd_IdiomasLugarAprendizaje" type="text" class="form-control">
+                           <span class="help-block m-b-none">Lugar de Aprendizaje (Solo letras)</span>
+                           <p id="fd_IdiomasLugarAprendizajeNoValida" class="text-danger">Lugar de Aprendizaje no valido.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <br />
+                  <button id="fd_GuardarIdiomas" type="button" class="disabled btn btn-success btn-sm">Guardar Idioma</button>
+                  <button id="fd_CancelarIdiomas" type="button" class="btn btn-danger btn-sm">Cancelar Idioma</button>
+               </div>
+            </div>
+            </div>
+            
+            <div id="fd_MainCertificadosDiv" class="row" style="display: none">
+				<div class="col-sm-12">
+					<div class="panel panel-primary">
+						<div class="panel-body">
+							<button id="fd_NuevoCertificado" type="button" class="btn btn-primary btn-sm">Nuevo Certificado</button>
+							<button id="fd_ModificarCertificado" type="button" class="btn btn-success btn-sm">Certificados</button>
+						</div>
+					</div>
+				</div>
+            </div>
+
+            <div id="fd_CertificadosExtrasBtns" class="row" style="display: none">
+            <div class="col-sm-12">
+               <div class="panel panel-primary">
+                  <div class="panel-body">
+                     <button id="fd_VolverCertificado" type="button" class="btn btn-primary btn-sm">Cancelar</button>
+                     <button id="fd_EliminarCertificados" type="button" class="btn btn-danger btn-sm">Eliminar Todos</button>
+                  </div>
+               </div>
+            </div>
+            </div>
+
+            <div id="fd_CertificadosTable" class="row" style="display: none">
+            <div class="col-sm-12">
+               <div>
+                  <input style="display: none" id="stackable_fd_CertificadosTableBuscar" type="text" placeholder="Buscar..." class="form-control input-sm"><br />
+                  <table id="stackable_fd_CertificadosTable" class="tablesaw tablesaw-stack" data-mode="stack">
+                  </table>
+                  <h5 class="text-muted" id="stackable_fd_CertificadosTableCount"></h5>
+               </div>
+            </div>
+            </div>
+
+            <div id="fd_CertificadosFieldsDiv" class="row" style="display: none">
+            <br />
+            <div class="col-sm-12">
+               <div id="fd_CertificadosFieldsDivMain">
+                  <fieldset>
+                     <legend id="fd_CertificadosFieldsDivCaption">Nuevo Certificado</legend>
+                     <br />
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Cedula</label>
+                        <div class="col-sm-10">
+                           <input id="fd_CertificadosCedula" type="text" class="form-control typeahead">
+                           <span class="help-block m-b-none">Cedula de Identidad del Tripulante: V14653267 o J65412378 o E64578911</span>
+                           <p id="fd_CertificadosCedulaNoValida" class="text-danger">Cedula de Identidad no valida.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Nombre Certificado</label>
+                        <div class="col-sm-10">
+                           <input id="fd_CertificadosNombre" type="text" class="form-control">
+                           <span class="help-block m-b-none">Nombre del Certificado (Solo letras)</span>
+                           <p id="fd_CertificadosNombreNoValida" class="text-danger">Nombre del Certificado no valido.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Fecha Expedicion</label>
+                        <div class="col-sm-10">
+                           <input id="fd_CertificadosFechaExpedicion" type="text" class="form-control">
+                           <span class="help-block m-b-none">Fecha de Expedicion del Certificado (dd/mm/yyyy)</span>
+                           <p id="fd_CertificadosFechaExpedicionNoValida" class="text-danger">Fecha de Expedicion no valida.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Fecha Caducidad</label>
+                        <div class="col-sm-10">
+                           <input id="fd_CertificadosFechaCaducidad" type="text" class="form-control">
+                           <span class="help-block m-b-none">Fecha de Caducidad del Certificado (dd/mm/yyyy)</span>
+                           <p id="fd_CertificadosFechaCaducidadNoValida" class="text-danger">Fecha de Caducidad no valida.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Numero Certificado</label>
+                        <div class="col-sm-10">
+                           <input id="fd_CertificadosNumeroCertificado" type="text" class="form-control">
+                           <span class="help-block m-b-none">Numero del Certificado (Numeros y/o letras)</span>
+                           <p id="fd_CertificadosNumeroCertificadoNoValida" class="text-danger">Numero del Certificado no valido.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Lugar Expedicion</label>
+                        <div class="col-sm-10">
+                           <input id="fd_CertificadosLugarExpedicion" type="text" class="form-control">
+                           <span class="help-block m-b-none">Lugar de Expedicion (Solo letras)</span>
+                           <p id="fd_CertificadosLugarExpedicionNoValida" class="text-danger">Lugar de Expedicion no valido.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <br />
+                  <button id="fd_GuardarCertificados" type="button" class="disabled btn btn-success btn-sm">Guardar Certificado</button>
+                  <button id="fd_CancelarCertificados" type="button" class="btn btn-danger btn-sm">Cancelar Certificado</button>
+               </div>
+            </div>
+            </div>
+            
+            <div id="fd_MainNacionalidadesDiv" class="row" style="display: none">
+				<div class="col-sm-12">
+					<div class="panel panel-primary">
+						<div class="panel-body">
+							<button id="fd_NuevoNacionalidad" type="button" class="btn btn-primary btn-sm">Nueva Nacionalidad</button>
+							<button id="fd_ModificarNacionalidad" type="button" class="btn btn-success btn-sm">Nacionalidades</button>
+						</div>
+					</div>
+				</div>
+            </div>
+
+            <div id="fd_NacionalidadesExtrasBtns" class="row" style="display: none">
+            <div class="col-sm-12">
+               <div class="panel panel-primary">
+                  <div class="panel-body">
+                     <button id="fd_VolverNacionalidad" type="button" class="btn btn-primary btn-sm">Cancelar</button>
+                     <button id="fd_EliminarNacionalidades" type="button" class="btn btn-danger btn-sm">Eliminar Todos</button>
+                  </div>
+               </div>
+            </div>
+            </div>
+
+            <div id="fd_NacionalidadesTable" class="row" style="display: none">
+            <div class="col-sm-12">
+               <div>
+                  <input style="display: none" id="stackable_fd_NacionalidadesTableBuscar" type="text" placeholder="Buscar..." class="form-control input-sm"><br />
+                  <table id="stackable_fd_NacionalidadesTable" class="tablesaw tablesaw-stack" data-mode="stack">
+                  </table>
+                  <h5 class="text-muted" id="stackable_fd_NacionalidadesTableCount"></h5>
+               </div>
+            </div>
+            </div>
+
+            <div id="fd_NacionalidadesFieldsDiv" class="row" style="display: none">
+            <br />
+            <div class="col-sm-12">
+               <div id="fd_NacionalidadesFieldsDivMain">
+                  <fieldset>
+                     <legend id="fd_NacionalidadesFieldsDivCaption">Nueva Nacionalidad</legend>
+                     <br />
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Cedula</label>
+                        <div class="col-sm-10">
+                           <input id="fd_NacionalidadesCedula" type="text" class="form-control typeahead">
+                           <span class="help-block m-b-none">Cedula de Identidad del Tripulante: V14653267 o J65412378 o E64578911</span>
+                           <p id="fd_NacionalidadesCedulaNoValida" class="text-danger">Cedula de Identidad no valida.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Nombre Nacionalidad</label>
+                        <div class="col-sm-10">
+                           <input id="fd_NacionalidadesNombre" type="text" class="form-control">
+                           <span class="help-block m-b-none">Nombre de la Nacionalidad</span>
+                           <p id="fd_NacionalidadesNombreNoValida" class="text-danger">Nombre de la Nacionalidad no valida.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Numero Pasaporte</label>
+                        <div class="col-sm-10">
+                           <input id="fd_NacionalidadesNumeroPasaporte" type="text" class="form-control">
+                           <span class="help-block m-b-none">Numero de Pasaporte (Numeros y/o letras)</span>
+                           <p id="fd_NacionalidadesNumeroPasaporteNoValida" class="text-danger">Numero de Pasaporte no valido.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Nombres Pasaporte</label>
+                        <div class="col-sm-10">
+                           <input id="fd_NacionalidadesNombresPasaporte" type="text" class="form-control">
+                           <span class="help-block m-b-none">Nombres en el Pasaporte (Solo letras)</span>
+                           <p id="fd_NacionalidadesNombresPasaporteNoValida" class="text-danger">Nombres Pasaporte no valido.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Apellidos Pasaporte</label>
+                        <div class="col-sm-10">
+                           <input id="fd_NacionalidadesApellidosPasaporte" type="text" class="form-control">
+                           <span class="help-block m-b-none">Apellidos en el Pasaporte (Solo letras)</span>
+                           <p id="fd_NacionalidadesApellidosPasaporteNoValida" class="text-danger">Apellidos Pasaporte no valido.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Fecha Expedicion</label>
+                        <div class="col-sm-10">
+                           <input id="fd_NacionalidadesFechaExpedicion" type="text" class="form-control">
+                           <span class="help-block m-b-none">Fecha Expedicion del Pasaporte (dd/mm/yyyy)</span>
+                           <p id="fd_NacionalidadesFechaExpedicionNoValida" class="text-danger">Fecha Expedicion no valida.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Fecha Caducidad</label>
+                        <div class="col-sm-10">
+                           <input id="fd_NacionalidadesFechaCaducidad" type="text" class="form-control">
+                           <span class="help-block m-b-none">Fecha Caducidad del Pasaporte (dd/mm/yyyy)</span>
+                           <p id="fd_NacionalidadesFechaCaducidadNoValida" class="text-danger">Fecha Caducidad no valida.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Lugar Expedicion</label>
+                        <div class="col-sm-10">
+                           <input id="fd_NacionalidadesLugarExpedicion" type="text" class="form-control">
+                           <span class="help-block m-b-none">Lugar de Expedicion del Pasaporte</span>
+                           <p id="fd_NacionalidadesLugarExpedicionNoValida" class="text-danger">Lugar de Expedicion no valido.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <br />
+                  <button id="fd_GuardarNacionalidades" type="button" class="disabled btn btn-success btn-sm">Guardar Nacionalidad</button>
+                  <button id="fd_CancelarNacionalidades" type="button" class="btn btn-danger btn-sm">Cancelar Nacionalidad</button>
+               </div>
+            </div>
+            </div>
+            
+            <div id="fd_MainVisasDiv" class="row" style="display: none">
+				<div class="col-sm-12">
+					<div class="panel panel-primary">
+						<div class="panel-body">
+							<button id="fd_NuevoVisa" type="button" class="btn btn-primary btn-sm">Nueva Visa</button>
+							<button id="fd_ModificarVisa" type="button" class="btn btn-success btn-sm">Visas</button>
+						</div>
+					</div>
+				</div>
+            </div>
+
+            <div id="fd_VisasExtrasBtns" class="row" style="display: none">
+            <div class="col-sm-12">
+               <div class="panel panel-primary">
+                  <div class="panel-body">
+                     <button id="fd_VolverVisa" type="button" class="btn btn-primary btn-sm">Cancelar</button>
+                     <button id="fd_EliminarVisas" type="button" class="btn btn-danger btn-sm">Eliminar Todos</button>
+                  </div>
+               </div>
+            </div>
+            </div>
+
+            <div id="fd_VisasTable" class="row" style="display: none">
+            <div class="col-sm-12">
+               <div>
+                  <input style="display: none" id="stackable_fd_VisasTableBuscar" type="text" placeholder="Buscar..." class="form-control input-sm"><br />
+                  <table id="stackable_fd_VisasTable" class="tablesaw tablesaw-stack" data-mode="stack">
+                  </table>
+                  <h5 class="text-muted" id="stackable_fd_VisasTableCount"></h5>
+               </div>
+            </div>
+            </div>
+
+            <div id="fd_VisasFieldsDiv" class="row" style="display: none">
+            <br />
+            <div class="col-sm-12">
+               <div id="fd_VisasFieldsDivMain">
+                  <fieldset>
+                     <legend id="fd_VisasFieldsDivCaption">Nueva Visa</legend>
+                     <br />
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Cedula</label>
+                        <div class="col-sm-10">
+                           <input id="fd_VisasCedula" type="text" class="form-control typeahead">
+                           <span class="help-block m-b-none">Cedula de Identidad del Tripulante: V14653267 o J65412378 o E64578911</span>
+                           <p id="fd_VisasCedulaNoValida" class="text-danger">Cedula de Identidad no valida.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Numero Pasaporte</label>
+                        <div class="col-sm-10">
+                           <input id="fd_VisasNumeroPasaporte" type="text" class="form-control">
+                           <span class="help-block m-b-none">Numero de Pasaporte (Numeros y/o letras)</span>
+                           <p id="fd_VisasNumeroPasaporteNoValida" class="text-danger">Numero de Pasaporte no valido.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Tipo de Visado</label>
+                        <div class="col-sm-10">
+                           <input id="fd_VisasTipoVisa" type="text" class="form-control">
+                           <span class="help-block m-b-none">Nombre o Tipo de Visado (Solo letras)</span>
+                           <p id="fd_VisasTipoVisaNoValida" class="text-danger">Nombre o Tipo de Visado no valido.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Lugar Expedicion</label>
+                        <div class="col-sm-10">
+                           <input id="fd_VisasLugarExpedicion" type="text" class="form-control">
+                           <span class="help-block m-b-none">Lugar de Expedicion (Solo letras)</span>
+                           <p id="fd_VisasLugarExpedicionNoValida" class="text-danger">Lugar de Expedicion no valido.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Fecha Expedicion</label>
+                        <div class="col-sm-10">
+                           <input id="fd_VisasFechaExpedicion" type="text" class="form-control">
+                           <span class="help-block m-b-none">Fecha de Expedicion (dd/mm/yyyy)</span>
+                           <p id="fd_VisasFechaExpedicionNoValida" class="text-danger">Fecha de Expedicion no valida.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Fecha Caducidad</label>
+                        <div class="col-sm-10">
+                           <input id="fd_VisasFechaCaducidad" type="text" class="form-control">
+                           <span class="help-block m-b-none">Fecha de Caducidad (dd/mm/yyyy)</span>
+                           <p id="fd_VisasFechaCaducidadNoValida" class="text-danger">Fecha de Caducidad no valida.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Numero Entradas</label>
+                        <div class="col-sm-10">
+                           <input id="fd_VisasNumeroEntradas" type="text" class="form-control">
+                           <span class="help-block m-b-none">Numero de Entradas permitidas (Numero entero)</span>
+                           <p id="fd_VisasNumeroEntradasNoValida" class="text-danger">Numero de Entradas no valido.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <br />
+                  <button id="fd_GuardarVisas" type="button" class="disabled btn btn-success btn-sm">Guardar Visa</button>
+                  <button id="fd_CancelarVisas" type="button" class="btn btn-danger btn-sm">Cancelar Visa</button>
+               </div>
+            </div>
+            </div>
+            
+            <div id="fd_MainFamiliaresDiv" class="row" style="display: none">
+				<div class="col-sm-12">
+					<div class="panel panel-primary">
+						<div class="panel-body">
+							<button id="fd_NuevoFamiliar" type="button" class="btn btn-primary btn-sm">Nuevo Familiar</button>
+							<button id="fd_ModificarFamiliar" type="button" class="btn btn-success btn-sm">Familiares</button>
+						</div>
+					</div>
+				</div>
+            </div>
+
+            <div id="fd_FamiliaresExtrasBtns" class="row" style="display: none">
+            <div class="col-sm-12">
+               <div class="panel panel-primary">
+                  <div class="panel-body">
+                     <button id="fd_VolverFamiliar" type="button" class="btn btn-primary btn-sm">Cancelar</button>
+                     <button id="fd_EliminarFamiliares" type="button" class="btn btn-danger btn-sm">Eliminar Todos</button>
+                  </div>
+               </div>
+            </div>
+            </div>
+
+            <div id="fd_FamiliaresTable" class="row" style="display: none">
+            <div class="col-sm-12">
+               <div>
+                  <input style="display: none" id="stackable_fd_FamiliaresTableBuscar" type="text" placeholder="Buscar..." class="form-control input-sm"><br />
+                  <table id="stackable_fd_FamiliaresTable" class="tablesaw tablesaw-stack" data-mode="stack">
+                  </table>
+                  <h5 class="text-muted" id="stackable_fd_FamiliaresTableCount"></h5>
+               </div>
+            </div>
+            </div>
+
+            <div id="fd_FamiliaresFieldsDiv" class="row" style="display: none">
+            <br />
+            <div class="col-sm-12">
+               <div id="fd_FamiliaresFieldsDivMain">
+                  <fieldset>
+                     <legend id="fd_FamiliaresFieldsDivCaption">Nuevo Familiar</legend>
+                     <br />
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Cedula</label>
+                        <div class="col-sm-10">
+                           <input id="fd_FamiliaresCedula" type="text" class="form-control typeahead">
+                           <span class="help-block m-b-none">Cedula de Identidad del Tripulante: V14653267 o J65412378 o E64578911</span>
+                           <p id="fd_FamiliaresCedulaNoValida" class="text-danger">Cedula de Identidad no valida.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Cedula Familiar</label>
+                        <div class="col-sm-10">
+                           <input id="fd_FamiliaresCedulaFamiliar" type="text" class="form-control">
+                           <span class="help-block m-b-none">Cedula del Familiar: V14653267 o J65412378 o E64578911. Diferente a cedulas de tripulantes</span>
+                           <p id="fd_FamiliaresCedulaFamiliarNoValida" class="text-danger">Cedula de Identidad no valida.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Nombres Familiar</label>
+                        <div class="col-sm-10">
+                           <input id="fd_FamiliaresNombreFamiliar" type="text" class="form-control">
+                           <span class="help-block m-b-none">Nombres del Familiar (Solo letras)</span>
+                           <p id="fd_FamiliaresNombreFamiliarNoValida" class="text-danger">Nombres del Familiar no valido.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Apellidos Familiar</label>
+                        <div class="col-sm-10">
+                           <input id="fd_FamiliaresApellidosFamiliar" type="text" class="form-control">
+                           <span class="help-block m-b-none">Apellidos del Familiar (Solo letras)</span>
+                           <p id="fd_FamiliaresApellidosFamiliarNoValida" class="text-danger">Apellidos del Familiar no valido.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Sexo Familiar</label>
+                        <div class="col-sm-10">
+                           <input id="fd_FamiliaresSexoFamiliar" type="text" class="form-control typeahead">
+                           <span class="help-block m-b-none">Sexo del Familiar (Masculino o Femenino)</span>
+                           <p id="fd_FamiliaresSexoFamiliarNoValida" class="text-danger">Sexo del Familiar no valido.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Desde Familiar</label>
+                        <div class="col-sm-10">
+                           <input id="fd_FamiliaresDesdeFamiliar" type="text" class="form-control">
+                           <span class="help-block m-b-none">Desde cuando es familia (aplicable a ex marido/mujer) (dd/mm/yyyy)</span>
+                           <p id="fd_FamiliaresDesdeFamiliarNoValida" class="text-danger">Desde Familiar no valido.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Hasta Familiar</label>
+                        <div class="col-sm-10">
+                           <input id="fd_FamiliaresHastaFamiliar" type="text" class="form-control">
+                           <span class="help-block m-b-none">Hasta cuando fue familia (aplicable a ex marido/mujer) (dd/mm/yyyy) >= Desde</span>
+                           <p id="fd_FamiliaresHastaFamiliarNoValida" class="text-danger">Hasta Familiar no valido.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Numero Hijos Familiar</label>
+                        <div class="col-sm-10">
+                           <input id="fd_FamiliaresNumeroHijos" type="text" class="form-control">
+                           <span class="help-block m-b-none">Numero de Hijos del Familiar (Numero entero)</span>
+                           <p id="fd_FamiliaresNumeroHijosNoValida" class="text-danger">Numero Hijos no valido.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Fecha Nacimiento Familiar</label>
+                        <div class="col-sm-10">
+                           <input id="fd_FamiliaresFechaNacimientoFamiliar" type="text" class="form-control">
+                           <span class="help-block m-b-none">Fecha de Nacimiento del Familiar (dd/mm/yyyy)</span>
+                           <p id="fd_FamiliaresFechaNacimientoFamiliaNoValida" class="text-danger">Fecha de Nacimiento del Familiar no valida.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Lugar Nacimiento Familiar</label>
+                        <div class="col-sm-10">
+                           <input id="fd_FamiliaresLugarNacimientoFamiliar" type="text" class="form-control">
+                           <span class="help-block m-b-none">Lugar de Nacimiento del Familiar (Solo letras)</span>
+                           <p id="fd_FamiliaresLugarNacimientoFamiliarNoValida" class="text-danger">Lugar de Nacimiento del Familiar no valido.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Provincia Nacimiento Familiar</label>
+                        <div class="col-sm-10">
+                           <input id="fd_FamiliaresProvinciaNacimientoFamiliar" type="text" class="form-control">
+                           <span class="help-block m-b-none">Provincia de Nacimiento del Familiar (Solo letras)</span>
+                           <p id="fd_FamiliaresProvinciaNacimientoFamiliarNoValida" class="text-danger">Provincia de Nacimiento del Familiar no valida.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Pais Nacimiento Familiar</label>
+                        <div class="col-sm-10">
+                           <input id="fd_FamiliaresPaisNacimientoFamiliar" type="text" class="form-control">
+                           <span class="help-block m-b-none">Pais de Nacimiento del Familiar (Solo letras)</span>
+                           <p id="fd_FamiliaresPaisNacimientoFamiliarNoValida" class="text-danger">Pais de Nacimiento del Familiar no valido.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Profesion Familiar</label>
+                        <div class="col-sm-10">
+                           <input id="fd_FamiliaresProfesionFamiliar" type="text" class="form-control">
+                           <span class="help-block m-b-none">Profesion del Familiar (Solo letras)</span>
+                           <p id="fd_FamiliaresProfesionFamiliarNoValida" class="text-danger">Profesion del Familiar no valida.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Telefonos Familiar</label>
+                        <div class="col-sm-10">
+                           <input id="fd_FamiliaresTelefonosFamiliar" type="text" class="form-control">
+                           <span class="help-block m-b-none">Telefonos del Familiar (Separar con , si son varios)</span>
+                           <p id="fd_FamiliaresTelefonosFamiliarNoValida" class="text-danger">Telefonos del Familiar no valido.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Direccion Familiar</label>
+                        <div class="col-sm-10">
+                           <input id="fd_FamiliaresDireccionFamiliar" type="text" class="form-control">
+                           <span class="help-block m-b-none">Direccion del Familiar (Solo letras)</span>
+                           <p id="fd_FamiliaresDireccionFamiliarNoValida" class="text-danger">Direccion del Familiar no valida.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Emails Familiar</label>
+                        <div class="col-sm-10">
+                           <input id="fd_FamiliaresEmailsFamiliar" type="text" class="form-control">
+                           <span class="help-block m-b-none">Emails del Familiar (Separar con , si son varios)</span>
+                           <p id="fd_FamiliaresEmailsFamiliarNoValida" class="text-danger">Emails del Familiar no validos.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Webs Familiar</label>
+                        <div class="col-sm-10">
+                           <input id="fd_FamiliaresWebsFamiliar" type="text" class="form-control">
+                           <span class="help-block m-b-none">Websites del Familiar (Separar con , si son varios)</span>
+                           <p id="fd_FamiliaresWebsFamiliarNoValida" class="text-danger">Websites del Familiar no valido.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Familiar Dependiente?</label>
+                        <div class="col-sm-10">
+                           <input id="fd_FamiliaresDependienteFamiliar" type="text" class="form-control typeahead">
+                           <span class="help-block m-b-none">Si la persona es o no un familiar dependiente (Si o No)</span>
+                           <p id="fd_FamiliaresDependienteFamiliarNoValida" class="text-danger">Familiar Dependiente no valido.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Familiar cohabita?</label>
+                        <div class="col-sm-10">
+                           <input id="fd_FamiliaresCohabitaFamiliar" type="text" class="form-control typeahead">
+                           <span class="help-block m-b-none">Si la persona vive o no con el tripulante (Si o No)</span>
+                           <p id="fd_FamiliaresCohabitaFamiliarNoValida" class="text-danger">Familiar cohabita no valido.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Parentesco Familiar</label>
+                        <div class="col-sm-10">
+                           <input id="fd_FamiliaresParentescoFamiliar" type="text" class="form-control typeahead">
+                           <span class="help-block m-b-none">Parentesco o Tipo de Relacion Familiar (Solo letras)</span>
+                           <p id="fd_FamiliaresParentescoFamiliarNoValida" class="text-danger">Parentesco no valido.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Fecha Defuncion Familiar</label>
+                        <div class="col-sm-10">
+                           <input id="fd_FamiliaresFechaDefuncionFamiliar" type="text" class="form-control">
+                           <span class="help-block m-b-none">Fecha de Defuncion del Familiar - si aplica (dd/mm/yyyy) >= Fecha Defuncion</span>
+                           <p id="fd_FamiliaresFechaDefuncionNoValida" class="text-danger">Fecha de Defuncion no valida.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <br />
+                  <button id="fd_GuardarFamiliares" type="button" class="disabled btn btn-success btn-sm">Guardar Familiar</button>
+                  <button id="fd_CancelarFamiliares" type="button" class="btn btn-danger btn-sm">Cancelar Familiar</button>
+               </div>
+            </div>
+            </div>
+            
+            <div id="fd_MainCargosDiv" class="row" style="display: none">
+				<div class="col-sm-12">
+					<div class="panel panel-primary">
+						<div class="panel-body">
+							<button id="fd_NuevoCargo" type="button" class="btn btn-primary btn-sm">Nuevo Cargo</button>
+							<button id="fd_ModificarCargo" type="button" class="btn btn-success btn-sm">Cargos</button>
+						</div>
+					</div>
+				</div>
+            </div>
+
+            <div id="fd_CargosExtrasBtns" class="row" style="display: none">
+            <div class="col-sm-12">
+               <div class="panel panel-primary">
+                  <div class="panel-body">
+                     <button id="fd_VolverCargo" type="button" class="btn btn-primary btn-sm">Cancelar</button>
+                     <button id="fd_EliminarCargos" type="button" class="btn btn-danger btn-sm">Eliminar Todos</button>
+                  </div>
+               </div>
+            </div>
+            </div>
+
+            <div id="fd_CargosTable" class="row" style="display: none">
+            <div class="col-sm-12">
+               <div>
+                  <input style="display: none" id="stackable_fd_CargosTableBuscar" type="text" placeholder="Buscar..." class="form-control input-sm"><br />
+                  <table id="stackable_fd_CargosTable" class="tablesaw tablesaw-stack" data-mode="stack">
+                  </table>
+                  <h5 class="text-muted" id="stackable_fd_CargosTableCount"></h5>
+               </div>
+            </div>
+            </div>
+
+            <div id="fd_CargosFieldsDiv" class="row" style="display: none">
+            <br />
+            <div class="col-sm-12">
+               <div id="fd_CargosFieldsDivMain">
+                  <fieldset>
+                     <legend id="fd_CargosFieldsDivCaption">Nuevo Cargo</legend>
+                     <br />
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Cedula</label>
+                        <div class="col-sm-10">
+                           <input id="fd_CargosCedula" type="text" class="form-control typeahead">
+                           <span class="help-block m-b-none">Cedula de Identidad del Tripulante: V14653267 o J65412378 o E64578911</span>
+                           <p id="fd_CargosCedulaNoValida" class="text-danger">Cedula de Identidad no valida.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Cargo</label>
+                        <div class="col-sm-10">
+                           <input id="fd_CargosCargo" type="text" class="form-control">
+                           <span class="help-block m-b-none">Nombre del Cargo (Solo letras)</span>
+                           <p id="fd_CargosCargoNoValida" class="text-danger">Nombre del Cargo no valido.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Sueldo</label>
+                        <div class="col-sm-10">
+                           <input id="fd_CargosSueldo" type="text" class="form-control">
+                           <span class="help-block m-b-none">Salario para el Cargo (Cantidad)</span>
+                           <p id="fd_CargosSueldoNoValida" class="text-danger">Salario no valido.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Bono</label>
+                        <div class="col-sm-10">
+                           <input id="fd_CargosBono" type="text" class="form-control">
+                           <span class="help-block m-b-none">Bono para el Cargo (Cantidad)</span>
+                           <p id="fd_CargosBonoNoValida" class="text-danger">Bono no valido.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Meses Servicio</label>
+                        <div class="col-sm-10">
+                           <input id="fd_CargosMesesDisfrute" type="text" class="form-control">
+                           <span class="help-block m-b-none">Meses de Servicio (Numero entero)</span>
+                           <p id="fd_CargosMesesNoValida" class="text-danger">Meses no valido.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Dias Disfrute</label>
+                        <div class="col-sm-10">
+                           <input id="fd_CargosDiasDisfrute" type="text" class="form-control">
+                           <span class="help-block m-b-none">Dias de Disfrute (Numero entero)</span>
+                           <p id="fd_CargosDiasDisfruteNoValida" class="text-danger">Dias Disfrute no valido.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Dias Pago</label>
+                        <div class="col-sm-10">
+                           <input id="fd_CargosDiasPago" type="text" class="form-control">
+                           <span class="help-block m-b-none">Dias de Pago (Numero entero)</span>
+                           <p id="fd_CargosDiasPagoNoValida" class="text-danger">Dias Pago no valido.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <br />
+                  <button id="fd_GuardarCargos" type="button" class="disabled btn btn-success btn-sm">Guardar Cargo</button>
+                  <button id="fd_CancelarCargos" type="button" class="btn btn-danger btn-sm">Cancelar Cargo</button>
+               </div>
+            </div>
+            </div>
+            
+            <div id="fd_MainExamenesDiv" class="row" style="display: none">
+				<div class="col-sm-12">
+					<div class="panel panel-primary">
+						<div class="panel-body">
+							<button id="fd_NuevoExamen" type="button" class="btn btn-primary btn-sm">Nuevo Examen</button>
+							<button id="fd_ModificarExamen" type="button" class="btn btn-success btn-sm">Examenes</button>
+						</div>
+					</div>
+				</div>
+            </div>
+
+            <div id="fd_ExamenesExtrasBtns" class="row" style="display: none">
+            <div class="col-sm-12">
+               <div class="panel panel-primary">
+                  <div class="panel-body">
+                     <button id="fd_VolverExamen" type="button" class="btn btn-primary btn-sm">Cancelar</button>
+                     <button id="fd_EliminarExamenes" type="button" class="btn btn-danger btn-sm">Eliminar Todos</button>
+                  </div>
+               </div>
+            </div>
+            </div>
+
+            <div id="fd_ExamenesTable" class="row" style="display: none">
+            <div class="col-sm-12">
+               <div>
+                  <input style="display: none" id="stackable_fd_ExamenesTableBuscar" type="text" placeholder="Buscar..." class="form-control input-sm"><br />
+                  <table id="stackable_fd_ExamenesTable" class="tablesaw tablesaw-stack" data-mode="stack">
+                  </table>
+                  <h5 class="text-muted" id="stackable_fd_ExamenesTableCount"></h5>
+               </div>
+            </div>
+            </div>
+
+            <div id="fd_ExamenesFieldsDiv" class="row" style="display: none">
+            <br />
+            <div class="col-sm-12">
+               <div id="fd_ExamenesFieldsDivMain">
+                  <fieldset>
+                     <legend id="fd_ExamenesFieldsDivCaption">Nuevo Examen</legend>
+                     <br />
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Cedula</label>
+                        <div class="col-sm-10">
+                           <input id="fd_ExamenesCedula" type="text" class="form-control typeahead">
+                           <span class="help-block m-b-none">Cedula de Identidad del Tripulante: V14653267 o J65412378 o E64578911</span>
+                           <p id="fd_ExamenesCedulaNoValida" class="text-danger">Cedula de Identidad no valida.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Nombre Examen</label>
+                        <div class="col-sm-10">
+                           <input id="fd_ExamenesNombreExamen" type="text" class="form-control">
+                           <span class="help-block m-b-none">Nombre del Examen</span>
+                           <p id="fd_ExamenesNombreExamenNoValida" class="text-danger">Nombre del Examen no valido.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Fecha Examen</label>
+                        <div class="col-sm-10">
+                           <input id="fd_ExamenesFechaExamen" type="text" class="form-control">
+                           <span class="help-block m-b-none">Fecha del Examen (dd/mm/yyyy)</span>
+                           <p id="fd_ExamenesFechaExamenNoValida" class="text-danger">Fecha del Examen no valida.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Fecha Caducidad</label>
+                        <div class="col-sm-10">
+                           <input id="fd_ExamenesFechaCaducidad" type="text" class="form-control">
+                           <span class="help-block m-b-none">Fecha de Caducidad del Examen (dd/mm/yyyy)</span>
+                           <p id="fd_ExamenesFechaCaducidadNoValida" class="text-danger">Fecha de Caducidad no valida.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Resultado Examen</label>
+                        <div class="col-sm-10">
+                           <input id="fd_ExamenesResultadoExamen" type="text" class="form-control">
+                           <span class="help-block m-b-none">Resultado del Examen (Solo letras)</span>
+                           <p id="fd_ExamenesResultadoExamenNoValida" class="text-danger">Resultado del Examen no valido.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <br />
+                  <button id="fd_GuardarExamenes" type="button" class="disabled btn btn-success btn-sm">Guardar Examen</button>
+                  <button id="fd_CancelarExamenes" type="button" class="btn btn-danger btn-sm">Cancelar Examen</button>
+               </div>
+            </div>
+            </div>
+            
+            <div id="fd_MainClinicasDiv" class="row" style="display: none">
+				<div class="col-sm-12">
+					<div class="panel panel-primary">
+						<div class="panel-body">
+							<button id="fd_NuevoClinica" type="button" class="btn btn-primary btn-sm">Nuevo Clinica</button>
+							<button id="fd_ModificarClinica" type="button" class="btn btn-success btn-sm">Clinicas</button>
+						</div>
+					</div>
+				</div>
+            </div>
+
+            <div id="fd_ClinicasExtrasBtns" class="row" style="display: none">
+            <div class="col-sm-12">
+               <div class="panel panel-primary">
+                  <div class="panel-body">
+                     <button id="fd_VolverClinica" type="button" class="btn btn-primary btn-sm">Cancelar</button>
+                     <button id="fd_EliminarClinicas" type="button" class="btn btn-danger btn-sm">Eliminar Todos</button>
+                  </div>
+               </div>
+            </div>
+            </div>
+
+            <div id="fd_ClinicasTable" class="row" style="display: none">
+            <div class="col-sm-12">
+               <div>
+                  <input style="display: none" id="stackable_fd_ClinicasTableBuscar" type="text" placeholder="Buscar..." class="form-control input-sm"><br />
+                  <table id="stackable_fd_ClinicasTable" class="tablesaw tablesaw-stack" data-mode="stack">
+                  </table>
+                  <h5 class="text-muted" id="stackable_fd_ClinicasTableCount"></h5>
+               </div>
+            </div>
+            </div>
+
+            <div id="fd_ClinicasFieldsDiv" class="row" style="display: none">
+            <br />
+            <div class="col-sm-12">
+               <div id="fd_ClinicasFieldsDivMain">
+                  <fieldset>
+                     <legend id="fd_ClinicasFieldsDivCaption">Nueva Clinica</legend>
+                     <br />
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Cedula</label>
+                        <div class="col-sm-10">
+                           <input id="fd_ClinicasCedula" type="text" class="form-control typeahead">
+                           <span class="help-block m-b-none">Cedula de Identidad del Tripulante: V14653267 o J65412378 o E64578911</span>
+                           <p id="fd_ClinicasCedulaNoValida" class="text-danger">Cedula de Identidad no valida.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Nombre Clinica</label>
+                        <div class="col-sm-10">
+                           <input id="fd_ClinicasNombreClinica" type="text" class="form-control">
+                           <span class="help-block m-b-none">Nombre de la Clinica (Solo letras)</span>
+                           <p id="fd_ClinicasNombreClinicaNoValida" class="text-danger">Nombre de la Clinica no valido.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Direccion Clinica</label>
+                        <div class="col-sm-10">
+                           <input id="fd_ClinicasDireccionClinica" type="text" class="form-control">
+                           <span class="help-block m-b-none">Direccion de la Clinica (Solo letras)</span>
+                           <p id="fd_ClinicasDireccionClinicaNoValida" class="text-danger">Direccion de la Clinica no valida.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Telefonos Clinica</label>
+                        <div class="col-sm-10">
+                           <input id="fd_ClinicasTelefonosClinica" type="text" class="form-control">
+                           <span class="help-block m-b-none">Telefonos de la Clinica (separar con , si son varios. Usar el siguiente formato: +582812826162)</span>
+                           <p id="fd_ClinicasTelefonosClinicaNoValida" class="text-danger">Telefonos de la Clinica no valido.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Emails Clinica</label>
+                        <div class="col-sm-10">
+                           <input id="fd_ClinicasEmailsClinica" type="text" class="form-control">
+                           <span class="help-block m-b-none">Emails de la Clinica (Separar con , si son varios)</span>
+                           <p id="fd_ClinicasEmailsClinicaNoValida" class="text-danger">Emails de la Clinica no valido.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <div clss="form-group">
+                        <label class="col-sm-2 control-label">Webs Clinica</label>
+                        <div class="col-sm-10">
+                           <input id="fd_ClinicasWebsClinica" type="text" class="form-control">
+                           <span class="help-block m-b-none">Websites de la Clinica (Separar con , si son varios)</span>
+                           <p id="fd_ClinicasWebsClinicaNoValida" class="text-danger">Webs de la Clinica no valido.</p>
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <br />
+                  <button id="fd_GuardarClinicas" type="button" class="disabled btn btn-success btn-sm">Guardar Clinica</button>
+                  <button id="fd_CancelarClinicas" type="button" class="btn btn-danger btn-sm">Cancelar Clinica</button>
+               </div>
+            </div>
+            </div>
+
+         </section>
+         <!-- END Page content-->
+      </section>
+      <!-- END Main section-->
+   </section>
+   <!-- END Main wrapper-->
+   <!-- START Scripts-->
+   <!-- Main vendor Scripts-->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+   <script src="assets/js/typeahead.bundle.min.js"></script>
+   <!--<script src="https://dtvj8ytqcyr5l.cloudfront.net/js/mytabl.es.min.00003.js"></script>-->
+   <script src="app/js/mytabl.es.js"></script>
+   <!--<script src="vendor/jquery/jquery.min.js"></script>-->
+
+   <script src="vendor/jquery/jquery.collapse.js"></script>
+   <script src="vendor/jquery/chosen.jquery.min.js"></script>
+   <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+   <script src="vendor/bootstrap/js/bootstrap-filestyle.js"></script>
+   <script src="vendor/slider/js/bootstrap-slider.js"></script>
+
+   <script src="vendor/sweet-alert/sweet-alert.min.js"></script>
+   <!-- Animo-->
+   <script src="vendor/animo/animo.min.js"></script>
+   <!-- Sparklines-->
+   <script src="vendor/sparklines/jquery.sparkline.min.js"></script>
+   <!-- Slimscroll-->
+   <script src="vendor/slimscroll/jquery.slimscroll.min.js"></script>
+   <!-- START Page Custom Script-->
+   <script src="vendor/director.min.js"></script>
+   <!-- END Page Custom Script-->
+   
+   <!-- App Main-->
+   <script src="app/js/pages.js"></script>
+   <script src="app/js/app.js"></script>
+
+   <script src="app/js/tables.stack.js"></script>
+
+   <script src="app/js/date.js"></script>
+   <script src="app/js/autodocs.js"></script>
+   <!-- END Scripts-->
+</body>
+
+</html>

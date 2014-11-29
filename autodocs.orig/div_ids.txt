@@ -1,0 +1,47 @@
+(config) fd_appName ->  AutoDocs
+
+fd_numMsgs -> 8
+fd_numMsgsTxt -> Tienes 8 mensajes nuevos
+fd_ReadAll -> LEER TODOS
+fd_NumNotifications -> 5
+fd_Notifications -> Avisos
+fd_youHaveXUnreadNotifications -> Tienes 5 avisos sin leer
+fd_unreadNotificationsTxt -> Avisos sin leer
+fd_Progress -> Progreso
+fd_ProgressComplete -> 80% Completado
+
+fd_profileMenu -> Perfil
+fd_optionsMenu -> Opciones
+fd_notificationsMenu -> Notificaciones
+fd_notificationsMenuNum -> 5
+fd_messagesMenu -> Mensajes
+fd_messagesMenuNum -> 8
+
+fd_submitSearch (hidden search button)
+
+fd_personName -> Eduardo Freitas
+fd_personRole -> Developer
+fd_currentStatus -> <div class="point point-success"></div>En linea
+
+fd_setOnlineStatus -> <div class="point point-success"></div>En linea</a>
+fd_setAwayStatus -> <div class="point point-warning"></div>Ausente</a>
+fd_setBusyStatus -> <div class="point point-danger"></div>Ocupado</a>
+
+fd_profileBar -> Perfil
+fd_settingsBar -> Opciones
+fd_NotificationsBar -> Avisos
+fd_NotificationsBarNum -> 5
+fd_messagesBar -> Mensajes
+fd_messagesBarNum -> 8
+fd_logoutBar -> Salir
+
+fd_btnLogout (logout button)
+
+fd_loggedOnUserPic -> app/img/user/02.jpg
+fd_LoggedOnUserFirstName -> Frank
+fd_loggedOnUsersList -> Conectados
+fd_loggedOffUsersList -> Desconectados
+
+class="point point-success point-lg" - online
+class="point point-danger point-lg" - busy
+class="point point-warning" - away

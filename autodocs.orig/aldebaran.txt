@@ -1,0 +1,164 @@
+// Tripulantes
+Cedula_DNI
+Cedula_Marina
+Nombre_Completo
+Fecha_Nacimiento
+Lugar_Nacimiento
+Provincia_Nacimiento
+Pais_Nacimiento
+Profesion
+Activo?
+Estado_Civil
+Sexo
+
+// Datos Personales
+Cedula
+Telefonos
+Direccion
+Emails
+Webs
+
+// Datos Fisicos
+Cedula
+Peso
+Estatura
+Talla de Braga
+No. Zapatos
+
+// Embarques
+Capitan
+Nombre_Buque
+Clase_Buque
+Cargo_Buque++ (Cargos -> Id_cargo)
+Fecha_Embarque
+Fecha_Desembarque ++
+Puerto_Buque
+Bandera_Buque
+Causa_Desembarque
+
+// Idiomas
+Id_idioma
+Nombre_Idioma
+Nivel_Lectura
+Nivel_Escrito
+Nivel_Hablado
+Acento
+Lugar_Aprendizaje
+
+// Nacionalidades
+Cedula
+Id_nacionalidad (auto)
+Nacionalidad_Pasaporte
+Numero_Pasaporte
+Nombres_Pasaporte
+Apellidos_Pasaporte
+Fecha_Expedicion
+Fecha_Caducidad
+Lugar_Expedicion
+Visas++
+
+// Visas
+Cedula
+Id_Nacionalidad
+Lugar_Expedicion
+Fecha_Expedicion
+Fecha_Caducidad
+Numero_Entradas
+Tipo_Visa
+
+// Parejas
+Cedula
+DNI_Pareja
+Nombres_Pareja
+Apellidos_Pareja
+Sexo_Pareja
+Pareja_Desde
+Pareja_Hasta
+Hijos_Pareja+
+Fecha_Nacimiento_Pareja
+Lugar_Nacimiento_Pareja
+Provincia_Nacimiento_Pareja
+Pais_Nacimiento_Pareja
+Profesion_Pareja
+Telefono_Pareja
+Direccion_Pareja
+Email_Pareja
+Web_Pareja
+Pareja_Actual?
+Dependiente_Pareja?
+Vivo_Pareja?
+Fecha_Defuncion_Pareja
+
+// Hijos
+Cedula
+DNI_Hijo
+Nombres_Hijo
+Apellidos_Hijo
+Sexo_Hijo
+Fecha_Nacimiento_Hijo
+Lugar_Nacimiento_Hijo
+Provincia_Nacimiento_Hijo
+Pais_Nacimiento_Hijo
+Profesion_Hijo
+Telefono_Hijo
+Direccion_Hijo
+Email_Hijo
+Web_Hijo
+Dependiente_Hijo?
+Vivo_Hijo?
+Fecha_Defuncion_Hijo
+
+// Otros Familiares
+Cedula
+DNI_Familiar
+Nombres_Familiar
+Apellidos_Familiar
+Sexo_Familiar
+Relacion_Familiar
+Fecha_Nacimiento_Familiar
+Lugar_Nacimiento_Familiar
+Provincia_Nacimiento_Familiar
+Pais_Nacimiento_Familiar
+Profesion_Familiar
+Telefono_Familiar
+Direccion_Familiar
+Email_Familiar
+Web_Familiar
+Dependiente_Familiar?
+Vivo_Familiar?
+Fecha_Defuncion_Familiar
+
+// Cargos
+Cedula
+Id_Cargo++
+Cargo
+Sueldo
+Bono
+Meses_Servicio
+Dias_Disfrute
+Dias_Pago
+
+// Examenes
+Cedula
+Nombre_Examen
+Fecha_Examen
+Fecha_Caducidad
+Resultado_Examen
+Clinica++
+
+// Clinicas
+Id_Clinica
+Nombre_Clinica
+Direccion_Clinica
+Telefono_Clinica
+Email_Clinica
+Web_Clinica
+
+// Certificados Profesionales
+Cedula
+Nombre_Certificado
+Fecha_Expedicion
+Fecha_Caducidad
+Numero_Certificado
+Lugar_Expedicion
+
